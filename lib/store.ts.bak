@@ -1,0 +1,11 @@
+import { create } from 'zustand';
+
+interface UIState {
+  showSolutions: boolean;
+  toggleSolutions: () => void;
+}
+
+export const useUIStore = create<UIState>((set) => ({
+  showSolutions: false,
+  toggleSolutions: () => set((s) => ({ showSolutions: !s.showSolutions }))
+}));
