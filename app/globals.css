@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+html, body { margin:0; padding:0; background:#000; color:#fff; font-family: Inter, Helvetica Neue, Arial, sans-serif; scroll-behavior:smooth; }
+section { position: relative; overflow: hidden; }
+.product-tab { border:1px solid rgb(255 255 255 / .35); border-radius:9999px; padding:.7rem 1.2rem; transition: all .3s; }
+.product-tab.active, .product-tab:hover { border-color:#ff6b35; background:#ff6b35; }
+.industry-card::after { content:''; position:absolute; inset:0; background:linear-gradient(to top, rgba(0,0,0,.9), transparent 50%); }
+.scroll-indicator { animation: bounce 1.4s infinite; }
+@keyframes bounce { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-8px)} }
