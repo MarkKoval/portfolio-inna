@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #0b0d10;
+  --bg-2: #0f1318;
+  --text: #e9eef5;
+  --muted: rgba(233, 238, 245, 0.72);
+  --muted-2: rgba(233, 238, 245, 0.48);
+  --line: rgba(233, 238, 245, 0.12);
+  --card: rgba(255, 255, 255, 0.04);
+  --shadow: rgba(0, 0, 0, 0.45);
+  --accent: #d8b77a;
+  --accent-2: #a7844d;
+  --accent-3: #f1e2c6;
+  --success: #4ade80;
+  --danger: #fb7185;
+}
+
+html,
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+.hero-grain {
+  background-image: url('/demo/ui/grain.svg');
+  mix-blend-mode: soft-light;
+  opacity: 0.2;
+}
+
+* {
+  border-color: var(--line);
+}
