@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Top tier solutions | Overview</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="overview">
+  <header class="topbar">
+    <a class="wordmark" href="index.html">Top tier solutions</a>
+    <nav class="view-toggle" aria-label="View mode">
+      <a href="index.html">Full view</a>
+      <a class="active" href="overview.html">Overview</a>
+    </nav>
+    <div class="top-actions">
+      <button class="btn btn-secondary open-lead">Share Your Contact Details</button>
+    </div>
+  </header>
+
+  <main class="overview-main">
+    <section class="section compact">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Quick navigation</p>
+          <h1>Top Tier Products</h1>
+        </div>
+        <div class="cards-grid compact-grid">
+          <article class="product-card reveal"><h3>Periflex EMI</h3><p>EMI + fire-safe sleeve for EV wiring</p><a href="#lead" class="know-more">Know more →</a></article>
+          <article class="product-card reveal"><h3>PLAS8 NA</h3><p>High-temp and abrasion-resistant textile</p><a href="#lead" class="know-more">Know more →</a></article>
+          <article class="product-card reveal"><h3>Revitex VSCTF RW</h3><p>Thermal runaway barrier for HV systems</p><a href="#lead" class="know-more">Know more →</a></article>
+          <article class="product-card reveal"><h3>Arcshield XT</h3><p>Arc + dielectric protection in compact spaces</p><a href="#lead" class="know-more">Know more →</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section sustainability compact">
+      <div class="container reveal">
+        <span class="pill">COMING SOON</span>
+        <h2>Sustainability Commitment</h2>
+        <p>When you see our sustainable certificate, you can rest assured your sourcing follows a verified environmental roadmap.</p>
+      </div>
+    </section>
+
+    <section class="section compact">
+      <div class="container reveal">
+        <h2>Other industries</h2>
+        <div class="mini-industries">
+          <span>Ovens</span><span>Vitroceramics</span><span>Industrial installations</span><span>Heat</span><span>Electricity</span><span>Electromagnetic</span><span>Robotics</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="lead" class="section lead compact">
+      <div class="container reveal">
+        <p class="eyebrow">Lead capture</p>
+        <h2>Be the First to Explore</h2>
+        <p>Our Relats virtual catalog is nearing completion. Request your copy now and get priority contact from our specialists.</p>
+        <button class="btn btn-primary open-lead">Request catalog</button>
+      </div>
+    </section>
+  </main>
+
+  <div class="lead-modal" id="leadModal" aria-hidden="true" role="dialog" aria-label="Contact form">
+    <div class="modal-card">
+      <button class="modal-close" id="closeModal">✕</button>
+      <form id="leadForm" novalidate>
+        <div class="step active" data-step="1">
+          <h3>Share your contact details</h3>
+          <label>Full Name* <input required name="fullName" /></label>
+          <label>Company Name* <input required name="company" /></label>
+        </div>
+        <div class="step" data-step="2">
+          <h3>How can we contact you?</h3>
+          <label>Email* <input required type="email" name="email" /></label>
+          <label>Phone Number* <input required name="phone" pattern="[0-9+()\-\s]{8,}" /></label>
+        </div>
+        <div class="step" data-step="3">
+          <h3>Project details</h3>
+          <label>Your message* <textarea required name="message" rows="4"></textarea></label>
+          <label class="check"><input required type="checkbox" name="terms" /> I have read and accept the Terms & Conditions</label>
+          <input type="text" name="website" class="honeypot" tabindex="-1" autocomplete="off" />
+        </div>
+        <div class="step" data-step="4">
+          <h3>We’ll contact you soon.</h3>
+          <p>Thanks for your request. Our team will send your catalog and next steps shortly.</p>
+        </div>
+        <div class="modal-actions" id="modalActions">
+          <button type="button" class="btn btn-secondary" id="prevStep">Back</button>
+          <button type="button" class="btn btn-primary" id="nextStep">Next</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
