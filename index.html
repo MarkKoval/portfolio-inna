@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Top tier solutions | Full view</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-view="full">
+    <div class="scroll-progress" aria-live="polite"><span id="progressValue">0%</span></div>
+
+    <header class="top-bar">
+      <a class="wordmark" href="#hero">Top tier solutions</a>
+      <nav class="mode-switch" aria-label="View mode switch">
+        <a class="mode-link active" href="index.html">Full view</a>
+        <a class="mode-link" href="overview.html">Overview</a>
+      </nav>
+      <div class="header-actions">
+        <a class="btn btn-secondary" href="#leadCapture">Share Your Contact Details</a>
+        <a class="btn btn-primary" href="#products">Check our Top Tier Products</a>
+      </div>
+    </header>
+
+    <main>
+      <section id="hero" class="section snap hero reveal">
+        <video class="bg-video" autoplay muted loop playsinline poster="assets/posters/hero-poster.svg" data-poster="assets/posters/hero-poster.svg">
+          <source src="assets/videos/hero.mp4" type="video/mp4" />
+        </video>
+        <div class="overlay"></div>
+        <div class="container hero-content">
+          <p class="eyebrow">Top tier solutions</p>
+          <h1>Your 360° partner for safety in electromobility.</h1>
+          <p class="lead">Protection sleeves for the mobility of tomorrow.</p>
+          <div class="hero-cta-row">
+            <a class="btn btn-primary" href="#products">Check our Top Tier Products</a>
+            <a class="btn btn-secondary" href="#leadCapture">Share Your Contact Details</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="products" class="section snap reveal">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">Featured range</p>
+            <h2>Top Tier Products</h2>
+          </div>
+          <div class="product-grid">
+            <article class="product-card">
+              <h3>Periflex EMI</h3>
+              <ul>
+                <li><span>Operating temperature</span><strong>-70°C to +235°C</strong></li>
+                <li><span>EMI shielding</span><strong>70 dB @ 1 GHz</strong></li>
+                <li><span>Abrasion resistance</span><strong>ISO 6722-1 Class 7</strong></li>
+                <li><span>Flammability</span><strong>UL94 V1</strong></li>
+              </ul>
+              <button class="know-more">Know more <span>→</span></button>
+            </article>
+            <article class="product-card">
+              <h3>PLAS8 NA</h3>
+              <ul>
+                <li><span>Operating temperature</span><strong>-50°C to +210°C</strong></li>
+                <li><span>Fire behaviour</span><strong>EN 45545-2 compliant</strong></li>
+                <li><span>Thermal runaway</span><strong>+500°C x 5 mins ≥ 2kV</strong></li>
+                <li><span>Mechanical resistance</span><strong>High impact barrier</strong></li>
+              </ul>
+              <button class="know-more">Know more <span>→</span></button>
+            </article>
+            <article class="product-card">
+              <h3>Revitex VSCTF RW</h3>
+              <ul>
+                <li><span>Operating temperature</span><strong>-40°C to +150°C</strong></li>
+                <li><span>Flammability</span><strong>FMVSS 302 pass</strong></li>
+                <li><span>Abrasion</span><strong>10,000+ cycles</strong></li>
+                <li><span>Heat reflection</span><strong>Up to 90%</strong></li>
+              </ul>
+              <button class="know-more">Know more <span>→</span></button>
+            </article>
+            <article class="product-card">
+              <h3>ShieldCore XR</h3>
+              <ul>
+                <li><span>Operating temperature</span><strong>-60°C to +180°C</strong></li>
+                <li><span>EMI shielding</span><strong>55 dB @ 500 MHz</strong></li>
+                <li><span>Fire protection</span><strong>Self-extinguishing</strong></li>
+                <li><span>Electrical insulation</span><strong>Up to 1.5kV</strong></li>
+              </ul>
+              <button class="know-more">Know more <span>→</span></button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="industries" class="section snap reveal media-section">
+        <video class="bg-video" autoplay muted loop playsinline poster="assets/posters/industries-poster.svg" data-poster="assets/posters/industries-poster.svg">
+          <source src="assets/videos/industries.mp4" type="video/mp4" />
+        </video>
+        <div class="overlay"></div>
+        <div class="container industries-layout">
+          <div>
+            <p class="eyebrow">Other industries</p>
+            <div class="industries-tabs" role="tablist">
+              <button class="industry-tab active" data-industry="ovens">Ovens</button>
+              <button class="industry-tab" data-industry="vitroceramics">Vitroceramics</button>
+              <button class="industry-tab" data-industry="installations">Industrial installations</button>
+              <button class="industry-tab" data-industry="heat">Heat</button>
+              <button class="industry-tab" data-industry="electricity">Electricity</button>
+              <button class="industry-tab" data-industry="electromagnetic">Electromagnetic</button>
+              <button class="industry-tab" data-industry="robotics">Robotics</button>
+            </div>
+          </div>
+          <article class="industry-panel" id="industryPanel">
+            <h3>Ovens</h3>
+            <p>High-temperature textile sleeves engineered for continuous radiant and convective heat in industrial oven lines.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="solutions" class="section snap reveal">
+        <div class="container">
+          <h2>Where power meets protection<br />Discover what’s inside</h2>
+          <div class="solutions-grid">
+            <div>Electrical Insulation</div>
+            <div>EMI Shielding</div>
+            <div>Fire Protection</div>
+            <div>Heat Reflection</div>
+            <div>Impact Protection</div>
+            <div>Mechanical Protection</div>
+            <div>Noise Reduction</div>
+            <div>Thermal Protection & Runaway</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="sustainability" class="section snap reveal calm">
+        <div class="container">
+          <p class="eyebrow">COMING SOON</p>
+          <h2>Sustainability Commitment</h2>
+          <p>When you see our sustainable certificate, you can rest assured your program is backed by verified low-impact manufacturing and traceable materials.</p>
+          <a class="btn btn-secondary" href="#">Sustainability</a>
+        </div>
+      </section>
+
+      <section id="stats" class="section snap reveal media-section">
+        <video class="bg-video" autoplay muted loop playsinline poster="assets/posters/stats-poster.svg" data-poster="assets/posters/stats-poster.svg">
+          <source src="assets/videos/stats.mp4" type="video/mp4" />
+        </video>
+        <div class="overlay"></div>
+        <div class="container">
+          <div class="section-head"><h2>Innovating worldwide</h2></div>
+          <div class="stats-grid">
+            <div><strong>4</strong><span>Presence in continents</span></div>
+            <div><strong>55</strong><span>Clients in countries</span></div>
+            <div><strong>5</strong><span>Manufacturing production plants</span></div>
+            <div><strong>1200+</strong><span>People employed globally</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="leadCapture" class="section snap reveal">
+        <div class="container lead-layout">
+          <div>
+            <p class="eyebrow">Lead capture</p>
+            <h2>Be the First to Explore</h2>
+            <p>Our Relats virtual catalog is nearing completion. Request your copy now and our team will send tailored recommendations for your application.</p>
+          </div>
+          <form id="leadForm" class="lead-form" novalidate>
+            <input type="text" name="website" tabindex="-1" autocomplete="off" class="honeypot" aria-hidden="true" />
+            <label>Full Name* <input required name="fullName" type="text" /></label>
+            <label>Company Name* <input required name="company" type="text" /></label>
+            <label>Email* <input required name="email" type="email" /></label>
+            <label>Phone Number* <input required name="phone" type="tel" placeholder="+34 600 000 000" /></label>
+            <label>Your message* <textarea required name="message" rows="4"></textarea></label>
+            <label class="checkbox"><input required type="checkbox" name="terms" /> I have read and accept the Terms & Conditions</label>
+            <button class="btn btn-primary" type="submit">Request catalog</button>
+          </form>
+          <div id="formSuccess" class="form-success" hidden>
+            <h3>Thanks. We’ll contact you soon.</h3>
+            <p>Your request has been received. Our specialists will reach out with the best-fit sleeve solutions.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
