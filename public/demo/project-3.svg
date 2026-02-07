@@ -1,0 +1,12 @@
+<svg width="1600" height="1000" viewBox="0 0 1600 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <linearGradient id="g3" x1="0" y1="0" x2="1600" y2="1000" gradientUnits="userSpaceOnUse">
+    <stop stop-color="hsl(60,45%,22%)"/>
+    <stop offset="1" stop-color="hsl(120,35%,11%)"/>
+  </linearGradient>
+</defs>
+<rect width="1600" height="1000" fill="url(#g3)"/>
+<circle cx="320" cy="225" r="108" fill="rgba(255,255,255,.12)"/>
+<rect x="390" y="320" width="670" height="340" rx="22" fill="rgba(255,255,255,.08)"/>
+<text x="80" y="900" fill="rgba(255,255,255,.7)" font-size="56" font-family="Arial">Architect Portfolio Demo 3</text>
+</svg>
