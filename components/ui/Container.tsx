@@ -1,0 +1,6 @@
+import type { PropsWithChildren } from 'react';
+import { cn } from '@/lib/utils';
+
+export const Container = ({ className, children }: PropsWithChildren<{ className?: string }>) => (
+  <div className={cn('mx-auto w-full max-w-layout px-6 lg:px-10', className)}>{children}</div>
+);
