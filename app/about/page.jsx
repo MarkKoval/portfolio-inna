@@ -1,6 +1,0 @@
-import { Container } from '@/components/ui/Container';
-const timeline = [{ year: '2016', text: 'Founded studio with focus on residential typologies.' }, { year: '2019', text: 'Expanded into civic and workplace commissions across CEE.' }, { year: '2022', text: 'Awarded for adaptive reuse and urban climate strategy.' }, { year: '2025', text: 'Launched multidisciplinary architecture + interiors practice.' }];
-
-export default function AboutPage() {
-  return <Container className="pt-32 pb-20"><h1 className="font-display text-5xl md:text-7xl">About</h1><div className="mt-8 grid gap-10 md:grid-cols-2"><div className="space-y-5 text-muted"><p>Architect Portfolio is a conceptual practice working across architecture, interior environments and urban systems.</p><p>Our philosophy blends technical precision with cinematic spatial rhythm. We focus on contextual materiality, passive climate response and durable forms.</p><p>Press: Monocle Habitat, Spatial Review, CEE Design Annual (placeholder).</p></div><div className="space-y-4 rounded-lg border border-white/10 bg-panel/50 p-6"><h2 className="font-display text-3xl">Timeline</h2>{timeline.map((item) => <div key={item.year} className="border-t border-white/10 pt-3"><p className="text-xs uppercase tracking-[0.16em] text-accent">{item.year}</p><p className="text-muted">{item.text}</p></div>)}</div></div></Container>;
-}
